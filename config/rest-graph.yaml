@@ -1,0 +1,10 @@
+# config/rest-graph.yaml
+development:
+    app_id: '282604391782141'
+    secret: 'faf4f58b47355d3caf9e6c9a72e08d18'
+    callback_host: 'http://localhost:3000/'
+
+production:
+    app_id: '282604391782141'
+    secret: 'faf4f58b47355d3caf9e6c9a72e08d18'
+    callback_host: 'http://Activ.herokuapp.com/'

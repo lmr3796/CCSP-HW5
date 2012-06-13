@@ -1,0 +1,23 @@
+<% @wall.each_key do |k| %> 
+    <ul class=categories>
+        <li class=category_container>
+        <div>
+            <h1><%=k%></h1>
+            <ul>
+                <% @wall[k].each do |post|%>
+                    <li style="margin:20px">
+                    <div>
+                        <img style="vertical-align:text-top" src=<%= post[:from]["picture"]%>/>
+                        <h4 style="display:inline-block;vertical-align:htop"><%=post[:from]["name"]%></h4>
+                        <br/><%=post[:content]%>
+                        <% unless post[:link].blank? %>
+                            </br><a href=<%=post[:link]%>>link</a>
+                        <% end %>
+                    </div>
+                    </li>
+                <% end %>
+            </ul>
+        </div>
+        </li>
+    </ul>
+<% end %> 
